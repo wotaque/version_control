@@ -1,5 +1,13 @@
 h1{
-    font-family: 'Fredoka One', cursive;
+    font-family:'Fredoka One', cursive;
+    text-align: center;
+    color: white;
+}
+
+#aboutUs {
+    border:2px solid black;
+    background-color: rgb(2, 2, 68);
+    color: white;
 }
 
 p{
@@ -7,10 +15,6 @@ p{
     font-size: 30px;
 }
 
-td{
-    padding:10px;
-    border:1px solid black;
-}
 
 a:hover {
     color: orange;
@@ -22,4 +26,17 @@ li.accent{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color:red;
 
+  }
+
+  #westBrom {
+      height:100px;
+      width: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #officialWebsite {
+      background-color: rgb(2, 2, 68);
+      color: white;
   }
