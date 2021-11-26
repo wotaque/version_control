@@ -1,33 +1,15 @@
 h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
 }
-#first{
-/* Single border property... */
-border: 2px solid green; 
-border-radius: 10px; 
-padding: 20px;
-/*border-color: red;
-border-width: 2px;
-border-style: solid;*/
-}
-#second{
-    border: 2px solid orange; 
-border-radius: 30px; 
-padding: 20px;
 
+#aboutUs {
+    border:2px solid black;
+    background-color: rgb(2, 2, 68);
+    color: white;
 }
-#third{
-    border: 2px solid blue; 
-border-radius: 50px; 
-padding: 60px;
-}
-.container{
-    border:2px dashed black;
-}
-td{
-    padding:10px;
-    border:1px solid black;
-}
+
 a:hover {
     color: orange;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -37,4 +19,17 @@ a:hover {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color:red;
 
+  }
+
+  #westBrom {
+      height:100px;
+      width: 100px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #officialWebsite {
+      background-color: rgb(2, 2, 68);
+      color: white;
   }
