@@ -7,6 +7,34 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="./index.js"></script>
+
+        <style type="text/css">
+            /* Set the size of the div element that contains the map */
+            #map {
+              height: 400px;
+              /* The height is 400 pixels */
+              width: 100%;
+              /* The width is the width of the web page */
+            }
+          </style>
+          <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              const uluru = { lat: -25.344, lng: 131.036 };
+              // The map, centered at Uluru
+              const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+              });
+              // The marker, positioned at Uluru
+              const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+              });
+            }
+          </script>
     </head>
     <body>
         <body>
@@ -17,6 +45,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="tab" href="#officialWebsite">Official Website</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#location">Location</a>
                     </li>
                 </ul>
     
@@ -42,6 +73,22 @@
                                 <h1>West Bromwich Albion Football Club</h1>
                                 </a>
                             </header>
+                        </div>
+                    </div>
+
+                    <div id="location" class="container tab-pane collapsible fade">
+                        <div>
+                            <header>
+                                <h1>Location</h1>
+                            </header>
+
+                            <div id="map"></div>
+
+                            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                            <script async 
+                                src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_AIzaSyDzmpN7zYqDSNeXJtqk_WemD7VEBnmsFWw&callback=initMap&libraries=&v=weekly"
+                                async>
+                            </script>
                         </div>
                     </div>
                 </div>
