@@ -1,5 +1,5 @@
 h1{
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Fredoka One', cursive;
     text-align: center;
     color: white;
 }
@@ -10,12 +10,19 @@ h1{
     color: white;
 }
 
+p{
+    font-family: 'Satisfy', cursive;
+    font-size: 30px;
+}
+
+
 a:hover {
     color: orange;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
   }
-  li.accent{
+
+li.accent{
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color:red;
 
