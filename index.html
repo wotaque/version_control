@@ -3,17 +3,52 @@
     <head>
         <title>West Bromwich Albion Squad</title>
         <p><link href="style.css" rel="stylesheet"></p>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1>West Bromwich Albion Football Club</h1>
-        <a href="about.html">About us</a>
-        <a href="https://www.wba.co.uk/" ">Albion's - Official WebSite</a>
-    <div class="container">
-        <div id="first">
-            <p>We are an English professional football club based in West Bromwich, West Midlands, England.</p>
-            <p>They compete in the EFL Championship, the second tier of English football. </p>
-            <p>The club was formed in 1878 and has played at its home ground, The , 1900.</p>
-        </div>
+        <body>
+            <div class="container">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#aboutUs">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#officialWebsite">Official Website</a>
+                    </li>
+                </ul>
+    
+                <div class="tab-content">
+                    <div id="aboutUs" class="container tab-pane collapsible active">
+                        <div>
+                            <header>
+                                <h1>West Bromwich Albion Football Club</h1>
+                                <img id="westBrom" src="west_brom.png" alt="West Bromwich Albion logo">
+                            </header>
+                        </div>
+                        <div class="bodyIndex">
+                            <p>We are an English professional football club based in West Bromwich, West Midlands, England.</p>
+                            <p>They compete in the EFL Championship, the second tier of English football. </p>
+                            <p>The club was formed in 1878 and has played at its home ground, The , 1900.</p>
+                        </div>
+                    </div>
+
+                    <div id="officialWebsite" class="container tab-pane collapsible fade">
+                        <div>
+                            <header>
+                                <a href="https://www.wba.co.uk/" alt="West Bromwich Albion Official Wesbite">
+                                <h1>West Bromwich Albion Football Club</h1>
+                                </a>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+       
     </div>
     </body>
 </html>
